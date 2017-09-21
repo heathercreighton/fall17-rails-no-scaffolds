@@ -1,0 +1,7 @@
+<h3>Edit user <%= @user.name %></h3>
+<%= form_tag update_user_path do %>
+	<%= text_field_tag :name, @user.name %>
+	<%= number_field_tag :age, @user.age %>
+	<%= hidden_field_tag :id, @user.id %>
+	<%= submit_tag "Edit User" %>	
+<% end %>

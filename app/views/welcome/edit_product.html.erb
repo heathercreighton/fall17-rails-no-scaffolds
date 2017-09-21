@@ -1,0 +1,9 @@
+<h3>Edit product </h3>
+
+	<%= form_for(@product, url: product_path, method: :patch ) do |f| %>
+		<%= f.hidden_field :id, value: @product.id %>
+	 	<%= f.text_field :name, value: @product.name %>
+	 	<%= f.number_field :price, value: @product.price %>
+	 	<%= f.number_field :quantity, value: @product.quantity %>
+ 	<%= f.submit "Edit Product" %>
+ 	<% end %>

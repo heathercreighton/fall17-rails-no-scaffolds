@@ -1,0 +1,6 @@
+<h1>User: <%= @user.name %> </h1>
+<h2>Age: <%=@user.age %></h2>
+
+<%= link_to "User Index", users_path %>  |  
+<%= link_to "Edit User", edit_path(id: @user.id) %>
+
